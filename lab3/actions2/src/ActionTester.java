@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.util.concurrent.atomic.AtomicInteger;
 import javax.swing.*;
 
 public class ActionTester
