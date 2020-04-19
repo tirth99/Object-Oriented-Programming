@@ -1,6 +1,0 @@
-As we just needed to add the icons in a horizontal row, I did not implement the coordinate functionality
-where I could have placed the icons at specified coordinates.
-
-I first thought that we had to create our own Icon interface with just one method: addIcon but the implementation
-I did seems more logical and rational. The tester class is creating the MarsIcon as well as showing the message but 
-it is not showing the globe picture. Maybe it has something to do with the naming or some other minor reason.
