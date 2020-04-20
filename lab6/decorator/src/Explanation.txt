@@ -1,0 +1,5 @@
+I had to negate 1 when drawing rectangle or box around MarsIcon because if I didn't, 
+the lines on the right or the bottom would not show. I think this is because the 
+Message box or MarsIcon is overlapping and hence I negate 1.
+
+I would like to know the exact reason if you could let me know after checking the code.
