@@ -1,0 +1,14 @@
+I did this problem the same way as the Greeting Producer example we have in textbook. I wanted to create same class for deposit and
+withdraw but I was not entirely sure how it would be functional. I tried putting an if else block but it didn't work so I created 
+two separate classes for Deposit and Withdraw.
+
+In this problem, both the threads for depositing and withdrawing into the same bank account are executed continuously. This threads are
+supposed to execute alternatively to deposit and withdraw amount. But as you can see sometimes before even the deposit method is completed, 
+the withdraw method starts on the same object hence not both println statement of deposit or withdraw method are printed at the same time. 
+This problem happens because sometimes a thread jumps ahead before it is supposed to be executed as there are no locks to maintain order 
+or synchronized methods to make the threads synchronized. Due to this, in some runs of the tester class, the balance becomes negative. 
+This is how it can become corrupted.
+
+To solve it you can use wait method in withdraw method where you check for the condition that if the balance is less then 0 then the thread
+should wait and in the deposit method, after all the logic is implemented, the last line should be notifyall that will make the other 
+threads into runnable state.
