@@ -1,0 +1,6 @@
+I know the class diagram looks a little complex but since there were 9 classes, I had no other choice I think.
+Also, I wanted to use a more relevant interface but I think an interface would be useful when we have more smaller,
+more detailed classes like individual department, doctors of different specialty since they have more common methods
+between them.
+
+I wanted to make a more complex and detailed class diagram but it is already a lot complex.
